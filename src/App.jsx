@@ -300,14 +300,14 @@ export default function Portfolio() {
             >
               Let's Connect
             </button>
-            {/* <a
-             href={`${import.meta.env.BASE_URL}resume.pdf`}
+            <a
+             href={`${import.meta.env.BASE_URL}/resume.pdf`}
               target="_blank" rel="noopener noreferrer"
               //download="Sarannithissh_Resume.pdf"
               className="px-7 py-3 bg-violet-500 text-white font-bold rounded-xl text-sm tracking-wide shadow-[0_0_32px_rgba(139,92,246,0.5)] transition-all duration-150 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_60px_rgba(139,92,246,0.75)] active:scale-95"
             >
               Explore Resume
-            </a> */}
+            </a>
           </div>
 
           {/* STATS */}
