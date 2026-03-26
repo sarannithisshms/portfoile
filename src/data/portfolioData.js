@@ -1,0 +1,111 @@
+// src/data/portfolioData.js
+
+export const SKILLS = [
+    { name: "React Native", pct: 80 },
+    { name: "React JS", pct: 80 },
+    { name: "Next JS", pct: 80 },
+    { name: "Tailwind CSS", pct: 80 },
+    { name: "SCSS", pct: 80 },
+    { name: "Redux", pct: 80 },
+    { name: "Angular", pct: 60 },
+    { name: "Flutter", pct: 60 },
+    { name: "MongoDB", pct: 60 },
+    { name: "REST APIs", pct: 80 },
+    { name: "Firebase", pct: 60 },
+    { name: "HTML5", pct: 60 },
+  ];
+  
+  export const  EXPERIENCE = [
+    {
+      company: "IBrige Techsoft Private Limited",
+      role: "Mobile Developer – React Native",
+      date: "Nov 2025 – Mar 2026 · Bengaluru",
+      project: "Gulf International Bank (GIB) Mobile",
+      desc: "Spending Budget Flow dashboards with interactive bar charts for transaction analytics. Advanced transaction sorting & filtering by date, amount, status and category for a secure fintech platform.",
+      tags: ["React Native", "Redux", "REST APIs", "Charts"],
+    },
+    {
+      company: "Leuwint Technologies Private Limited",
+      role: "Mobile Developer – React Native",
+      date: "May 2025 – Sep 2025 · Bengaluru",
+      project: "Guinness South Africa + OmniReach AgentApp",
+      desc: "KYC flow (location capture, image capture, BVN verification), account management, agent onboarding, team/role management and Google Maps integration.",
+      tags: ["React Native", "Redux", "Google Maps", "KYC"],
+    },
+    {
+      company: "Future Focus Infotech Pvt Ltd",
+      role: "Mobile Developer – React Native",
+      date: "Jun 2024 – Dec 2024 · Chennai",
+      project: "MoMo Pay South Africa – Comviva",
+      desc: "Featured session time function, multiple salary & merchant ID flows with UI design and API integration. Mentored junior developers in React Native best practices.",
+      tags: ["React Native", "Redux", "REST APIs", "Mentoring"],
+    },
+    {
+      company: "Sporfy Technologies Pvt Ltd",
+      role: "Full Stack Mobile & Web Developer",
+      date: "Nov 2021 – Oct 2023 · Coimbatore",
+      project: "Sporfy Event · Sporfy.com · SF-2 Financial · Sale Central",
+      desc: "5+ apps across React Native, ReactJS, Flutter, Angular — registration flows, financial dashboards, KYC scanning, booking managers and responsive animated web pages.",
+      tags: ["React Native", "ReactJS", "Flutter", "Angular", "Tailwind"],
+    },
+    {
+      company: "Globiz Solution Pvt Ltd",
+      role: "Mobile Developer – React Native",
+      date: "Sep 2020 – Oct 2021 · Punjab",
+      project: "8+ Apps from Scratch",
+      desc: "India Jinny, Sandy Fitness, Kids Patrol, AI Dating App — UI design, Google Sign-in, Firebase push notifications, Redux, responsive Android & iOS.",
+      tags: ["React Native", "Firebase", "Redux", "Google Auth"],
+    },
+    {
+      company: "Karunakara & Brothers Web Solutions",
+      role: "Android → React Native Developer",
+      date: "Nov 2018 – Nov 2019 · Coimbatore",
+      project: "AmoFetch Food Delivery App",
+      desc: "Transitioned from native Android to React Native. UI design, Google login, API integration and push notifications for a food delivery platform.",
+      tags: ["Android", "React Native", "Push Notifications"],
+    },
+  ];
+  export const PROJECTS = [
+    {
+      icon: "🏦",
+      name: "Gulf International Bank",
+      type: "Fintech · Mobile",
+      desc: "Secure mobile banking with spending dashboards, interactive charts, and advanced transaction filtering.",
+      tags: ["React Native", "Redux"],
+    },
+    {
+      icon: "🍺",
+      name: "Guinness Retail SA",
+      type: "Retail · Mobile",
+      desc: "Retailer management with KYC, inventory, sales, agent onboarding and Google Maps integration.",
+      tags: ["React Native", "Google Maps"],
+    },
+    {
+      icon: "💳",
+      name: "MoMo Pay Business",
+      type: "Fintech · Mobile",
+      desc: "Digital cash register for MTN MoMo — payments, payouts, transactions, airtime & bills.",
+      tags: ["React Native", "Redux"],
+    },
+    {
+      icon: "🏃",
+      name: "Sporfy Platform",
+      type: "Sports · Web+Mobile",
+      desc: "End-to-end sports booking — event management, fitness categories, slot booking and Flutter booking manager.",
+      tags: ["ReactJS", "Flutter", "Tailwind"],
+    },
+    {
+      icon: "📊",
+      name: "SF-2 Financial Dashboard",
+      type: "Finance · Web",
+      desc: "Responsive financial dashboards and invoicing tools for a hedge platform with rich data visualizations.",
+      tags: ["Angular", "Bootstrap", "SCSS"],
+    },
+    {
+      icon: "🏠",
+      name: "Sale Central – Piramal",
+      type: "Fintech · Web+Mobile",
+      desc: "KYC scanning, document uploads (salary slips, Form 16), location change for loan workflows.",
+      tags: ["React Native", "ReactJS", "Tailwind"],
+    },
+  ];
