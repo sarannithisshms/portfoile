@@ -284,13 +284,6 @@ export default function Portfolio() {
             <span className="dot-blink w-1.5 h-1.5 rounded-full bg-violet-400 inline-block" />
             Open to Opportunities
           </div>
-
-          {/* <h1 className="text-[clamp(1.5rem,5vw,8rem)] sm:text-[clamp(2.5rem,7vw,8rem)] font-black leading-[0.88] tracking-tighter overflow-hidden">
-            <span className="anim-line block outline-text">
-              {displayed}
-              <span className="animate-pulse">|</span>
-            </span>
-          </h1> */}
           <h1
             className="text-[clamp(2rem,8vw,6rem)] font-normal leading-[1.1] tracking-wide overflow-hidden "
             style={{
