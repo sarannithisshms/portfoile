@@ -69,7 +69,7 @@ export const SKILLS = [
     {
       icon: "🏦",
       name: "Gulf International Bank",
-      type: "Fintech · Mobile",
+      type: "Banking domain · Mobile",
       desc: "Secure mobile banking with spending dashboards, interactive charts, and advanced transaction filtering.",
       tags: ["React Native", "Redux"],
     },

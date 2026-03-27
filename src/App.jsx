@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import useInView from "./hooks/useInView";
 import useCountUp from "./hooks/useCountup";
-import Navbar from './components/nav'
+import Navbar from "./components/nav";
 import ContactSection from "./components/contactsection";
 import { SKILLS, EXPERIENCE, PROJECTS } from "./data/portfolioData";
-
 
 /* ─── SMALL COMPONENTS ──────────────────────────────── */
 const Tag = ({ label }) => (
@@ -172,6 +171,24 @@ export default function Portfolio() {
   const [statsStarted, setStatsStarted] = useState(false);
   const [mousePos, setMousePos] = useState({ x: -999, y: -999 });
   const statsRef = useRef(null);
+  const name = "M.S.Sarannithissh";
+
+  const [displayed, setDisplayed] = useState("");
+  const cursorRef = useRef(null);
+
+  useEffect(() => {
+    if (displayed.length < name.length) {
+      const timeout = setTimeout(
+        () => setDisplayed(name.slice(0, displayed.length + 1)),
+        100
+      );
+      return () => clearTimeout(timeout);
+    } else {
+      if (cursorRef.current) {
+        cursorRef.current.style.display = "none";
+      }
+    }
+  }, [displayed]);
 
   /* cursor glow */
   useEffect(() => {
@@ -195,7 +212,7 @@ export default function Portfolio() {
   }, []);
 
   /* nav active section highlight */
-   const navLinks = ["skills", "experience", "projects", "contact"];
+  const navLinks = ["skills", "experience", "projects", "contact"];
   const scrollTo = (id) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -243,7 +260,7 @@ export default function Portfolio() {
       />
 
       {/* ── NAV ── */}
-       <Navbar  navLinks={navLinks} scrollTo={scrollTo} />
+      <Navbar navLinks={navLinks} scrollTo={scrollTo} />
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-28 pb-12 overflow-hidden">
@@ -268,10 +285,22 @@ export default function Portfolio() {
             Open to Opportunities
           </div>
 
-          <h1 className="text-[clamp(3.5rem,9vw,8rem)] font-black leading-[0.88] tracking-tighter overflow-hidden">
-            <span className="anim-line  block outline-text">
-              M.S.Sarannithissh
+          {/* <h1 className="text-[clamp(1.5rem,5vw,8rem)] sm:text-[clamp(2.5rem,7vw,8rem)] font-black leading-[0.88] tracking-tighter overflow-hidden">
+            <span className="anim-line block outline-text">
+              {displayed}
+              <span className="animate-pulse">|</span>
             </span>
+          </h1> */}
+          <h1
+            className="text-[clamp(2rem,8vw,6rem)] font-normal leading-[1.1] tracking-wide overflow-hidden "
+            style={{
+              fontFamily: "'Great Vibes', cursive",
+              color: "rgb(139,92,246)",
+              textShadow: "0 0 30px rgba(139,92,246,0.8)",
+            } }
+          >
+            {displayed}
+            <span ref={cursorRef} className="animate-pulse opacity-60">|</span>
           </h1>
 
           <p className="anim-role mt-4 text-lg md:text-2xl font-light text-white/50 tracking-wide">
@@ -301,8 +330,9 @@ export default function Portfolio() {
               Let's Connect
             </button>
             <a
-             href={`${import.meta.env.BASE_URL}/resume.pdf`}
-              target="_blank" rel="noopener noreferrer"
+              href={`${import.meta.env.BASE_URL}/resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
               //download="Sarannithissh_Resume.pdf"
               className="px-7 py-3 bg-violet-500 text-white font-bold rounded-xl text-sm tracking-wide shadow-[0_0_32px_rgba(139,92,246,0.5)] transition-all duration-150 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_60px_rgba(139,92,246,0.75)] active:scale-95"
             >
@@ -392,5 +422,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
