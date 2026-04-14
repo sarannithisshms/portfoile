@@ -306,7 +306,7 @@ export default function Portfolio() {
 
           <p className="anim-sub mt-2 text-sm text-white/40 max-w-lg leading-relaxed font-normal">
             React Native · React JS · Next JS · Flutter · Angular — building
-            fast, beautiful, production-grade apps for mobile & web.
+            fast, beautiful, production-grade apps for mobile & web. 
           </p>
 
           <div className="anim-cta flex flex-wrap gap-3 mt-8">
